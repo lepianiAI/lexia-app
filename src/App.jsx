@@ -65,7 +65,7 @@ function StatusBadge({ s }) {
 function SectionHead({ title, sub }) {
   return (
     <div style={{marginBottom:"1.2rem"}}>
-      <h2 style={{fontFamily:"Syne,'Arial Black',sans-serif",fontWeight:900,fontSize:"1.15rem",margin:0,letterSpacing:"-0.01em"}}>{title}</h2>
+      <h2 style={{fontFamily:"'Syne',system-ui,sans-serif",fontWeight:900,fontSize:"1.15rem",margin:0,letterSpacing:"-0.01em"}}>{title}</h2>
       {sub && <p style={{fontSize:"0.78rem",color:"#6B7A90",margin:"0.2rem 0 0"}}>{sub}</p>}
     </div>
   );
@@ -160,7 +160,7 @@ export default function LexiaApp() {
               <span style={{ fontSize:"1.1rem" }}>{s.i}</span>
               <span style={{ fontSize:"0.63rem", background:`${s.c}22`, color:s.c, padding:"0.12rem 0.42rem", borderRadius:100 }}>{s.d}</span>
             </div>
-            <div style={{ fontFamily:"Syne,'Arial Black',sans-serif", fontSize:"2rem", fontWeight:900, color:s.c, lineHeight:1 }}>{s.v}</div>
+            <div style={{ fontFamily:"'Syne',system-ui,sans-serif", fontSize:"2rem", fontWeight:900, color:s.c, lineHeight:1 }}>{s.v}</div>
             <div style={{ fontSize:"0.7rem", color:"#6B7A90", marginTop:"0.25rem" }}>{s.l}</div>
           </div>
         ))}
@@ -197,7 +197,7 @@ export default function LexiaApp() {
           {CITAS.filter(c=>c.date==="Hoy").map(c => (
             <div key={c.id} style={{ display:"flex", alignItems:"center", gap:"0.8rem", background:"#141C26", borderRadius:10, padding:"0.7rem", marginBottom:"0.5rem", border:"1px solid rgba(255,255,255,.05)" }}>
               <div style={{ textAlign:"center", minWidth:46, flexShrink:0 }}>
-                <div style={{ fontFamily:"Syne,'Arial Black',sans-serif", fontWeight:900, fontSize:"0.95rem", color:"#5B9FFF" }}>{c.time}</div>
+                <div style={{ fontFamily:"'Syne',system-ui,sans-serif", fontWeight:900, fontSize:"0.95rem", color:"#5B9FFF" }}>{c.time}</div>
                 <div style={{ fontSize:"0.6rem", color:"#6B7A90" }}>60 min</div>
               </div>
               <div style={{ flex:1 }}>
@@ -270,7 +270,7 @@ export default function LexiaApp() {
             {CITAS.filter(c=>c.date===day).map(c => (
               <div key={c.id} style={{ display:"flex", gap:"0.8rem", background:"#0D1117", border:"1px solid rgba(255,255,255,.07)", borderRadius:12, padding:"0.9rem", marginBottom:"0.6rem", alignItems:"center" }}>
                 <div style={{ textAlign:"center", minWidth:50, flexShrink:0 }}>
-                  <div style={{ fontFamily:"Syne,'Arial Black',sans-serif", fontWeight:900, fontSize:"1rem", color:"#5B9FFF" }}>{c.time}</div>
+                  <div style={{ fontFamily:"'Syne',system-ui,sans-serif", fontWeight:900, fontSize:"1rem", color:"#5B9FFF" }}>{c.time}</div>
                   <div style={{ fontSize:"0.6rem", color:"#6B7A90" }}>60 min</div>
                 </div>
                 <div style={{ flex:1, minWidth:0 }}>
@@ -406,7 +406,7 @@ export default function LexiaApp() {
       {/* ── TOPBAR ── */}
       <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding: isMobile ? "0.75rem 1rem" : "0.85rem 1.5rem", background:"#0D1117", borderBottom:"1px solid rgba(255,255,255,.07)", flexShrink:0, zIndex:10 }}>
         <div style={{ display:"flex", alignItems:"center", gap:"1rem" }}>
-          <div style={{ fontFamily:"Syne,'Arial Black',sans-serif", fontWeight:900, fontSize:"1.3rem", background:"linear-gradient(135deg,#fff,#00D4FF)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Lexia</div>
+          <div style={{ fontFamily:"'Syne',system-ui,sans-serif", fontWeight:900, fontSize:"1.3rem", background:"linear-gradient(135deg,#fff,#00D4FF)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Lexia</div>
           {!isMobile && (
             <div style={{ fontSize:"0.78rem", color:"#6B7A90" }}>
               {NAV.find(n=>n.id===view)?.label} · Viernes, 1 de mayo de 2026
